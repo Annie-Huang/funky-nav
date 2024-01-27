@@ -1,0 +1,6 @@
+Create a clean, modern navigation with HTML & CSS (https://www.youtube.com/watch?v=SkML640BcoA)
+
+https://github.com/kevin-powell/funky-nav/tree/main
+https://github.com/Annie-Huang/funky-nav
+
+-------------------------------------------------------------
