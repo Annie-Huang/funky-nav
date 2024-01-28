@@ -10,8 +10,24 @@ html {
   font-family: system-ui;
 }
 body {
+  /* Example of a large content in <main>*/
+  min-height: 200vh;
+
   margin: 0;
   font-size: 1.25rem;
   background: var(--body-bg);
   color: white;
+
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 2rem;
+}
+
+nav {
+  /* Solution of making thing sticky if the height of the content is ever over 100vh on the <main>*/
+  position: sticky;
+  top: 0;
+  max-height: 100svh;
+
+  background-color: var(--nav-bg);
 }
