@@ -74,7 +74,9 @@ nav {
 }
 
 ::view-transition-group(activeNavTab) {
-  animation-duration: 1.5s; /* you see the problem when switching between navigation item with long duration */
+  /*animation-duration: 1.5s; !* you see the problem when switching between navigation item with long duration *!*/
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .nav-list li.active::before,
