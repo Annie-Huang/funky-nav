@@ -38,20 +38,21 @@ nav {
   list-style: none;
 
   display: grid;
-  gap: 4rem;
+  gap: 2rem;
   padding-block: 2rem;
   font-size: 2rem;
 }
 
 .nav-list li {
-  background: pink;
+  /*background: pink;*/
   padding: 1rem 2rem;
   margin-left: 2rem;
   border-radius: 100vw 0 0 100vw;
 }
 
 .nav-list li.active {
-  background: red;
+  /*background: red;*/
+  background: var(--body-bg);
 }
 
 .nav-list a {
