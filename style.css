@@ -52,9 +52,19 @@ nav {
 }
 
 .nav-list li.active {
+  /* Should have a view-transition-name when using <meta name="view-transition" .. />
+     only one element should assign to one view-transition-name, in our case, we will only have one .active element
+     e.g. cannot do ".nav-list a { view-transition-name: activeNavTab;}"
+  */
+  view-transition-name: activeNavTab;
+
   /*background: red;*/
   background: var(--body-bg);
   position: relative;
+}
+
+::view-transition-group(activeNavTab) {
+  animation-duration: 1.5s; /* you see the problem when switching between navigation item with long duration */
 }
 
 .nav-list li.active::before,

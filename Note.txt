@@ -4,3 +4,5 @@ https://github.com/kevin-powell/funky-nav/tree/main
 https://github.com/Annie-Huang/funky-nav
 
 -------------------------------------------------------------
+
+chrome://flags -> search for view-transition -> change to enable
