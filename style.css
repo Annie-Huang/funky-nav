@@ -80,6 +80,9 @@ nav {
 }
 .nav-list li.active::after {
   bottom: calc(var(--border-radius) * -1);
+
+  border-radius: 0 100vw 0 0;
+  box-shadow: 10px -10px 0 10px var(--body-bg);
 }
 
 .nav-list a {
