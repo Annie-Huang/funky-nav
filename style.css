@@ -31,3 +31,18 @@ nav {
 
   background-color: var(--nav-bg);
 }
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
