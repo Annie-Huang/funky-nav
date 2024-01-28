@@ -63,6 +63,16 @@ nav {
   position: relative;
 }
 
+.nav-list li:nth-child(1) a {
+  view-transition-name: navLink-1;
+}
+.nav-list li:nth-child(2) a {
+  view-transition-name: navLink-2;
+}
+.nav-list li:nth-child(3) a {
+  view-transition-name: navLink-3;
+}
+
 ::view-transition-group(activeNavTab) {
   animation-duration: 1.5s; /* you see the problem when switching between navigation item with long duration */
 }
@@ -101,4 +111,9 @@ nav {
 .nav-list a {
   color: white;
   text-decoration: none;
+
+  /* Fix the problem that view-transition-name creates */
+  display: block;
+  position: relative;
+  z-index: 10;
 }
