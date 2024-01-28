@@ -66,7 +66,10 @@ nav {
   width: var(--border-radius);
   height: var(--border-radius);
   right: 0;
-  background: red;
+
+  /* !!! final step */
+  /*background: red;*/
+  background: var(--nav-bg);
   /*border-radius: 100vw;*/
 }
 
